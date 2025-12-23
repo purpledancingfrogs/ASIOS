@@ -1,7 +1,3 @@
-Here is the **correct README** for ASIOS — clean, authoritative, structural, and ready to paste exactly as-is.
-
----
-
 # **ASIOS**
 
 ### **Artificial Superintelligence Operating System**
