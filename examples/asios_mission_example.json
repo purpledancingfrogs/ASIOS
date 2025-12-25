@@ -1,0 +1,29 @@
+{
+  "mission_id": "asios_bootstrap_001",
+  "schema_version": "1.0",
+  "created_at": "2025-12-25T00:00:00Z",
+  "env": "DEV",
+  "created_by_agent": "Aureon",
+  "type": "LAPTOP_FS",
+  "payload": {
+    "steps": [
+      {
+        "op": "CREATE_FILE",
+        "path": "init/hello_from_asios.txt",
+        "expected_previous_hash": null,
+        "content": "ASIOS initialized.\nSystem lattice confirmed.\n"
+      },
+      {
+        "op": "CREATE_FILE",
+        "path": "scripts/init_lattice.sh",
+        "expected_previous_hash": null,
+        "content": "#!/bin/bash\necho \"Initializing lattice runtime...\"\ntouch lattice_ready.flag\necho \"done.\"\n"
+      },
+      {
+        "op": "RUN_SCRIPT",
+        "path": "scripts/init_lattice.sh",
+        "expected_previous_hash": "b1bcd1813c1b65115f3892b65b42944640edecb0d2e76c0a789fcf4a4a48fdc5"
+      }
+    ]
+  }
+}
