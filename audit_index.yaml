@@ -1,0 +1,13 @@
+# File: .asios/audit_index.yaml
+# Purpose: Track validation-required files with metadata
+
+audit_items:
+  - path: "mission_001.json"
+    required: true
+    description: "Primary mission JSON for ASIOS validation"
+  - path: "hello_from_asios.txt"
+    required: true
+    description: "Presence confirmation file for ASIOS agent"
+  - path: "validation/validation_stamp_asios.py"
+    required: true
+    description: "ASIOS validation logic script"
