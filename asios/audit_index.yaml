@@ -1,0 +1,22 @@
+```yaml
+audit_index:
+  - id: 001
+    type: operational
+    file: hello_from_asios.txt
+    description: Confirmation of cognitive boot signal
+  - id: 002
+    type: control
+    file: mission_001.json
+    description: Canonical deterministic task structure
+  - id: 003
+    type: execution_script
+    file: laptop_executor.ps1
+    description: Powershell-based mission runner
+  - id: 004
+    type: documentation
+    file: README_EXEC.md
+    description: Execution protocol and agent architecture
+  - id: 005
+    type: manifest
+    file: .asios/audit_index.yaml
+    description: Index of operational proof artifacts
