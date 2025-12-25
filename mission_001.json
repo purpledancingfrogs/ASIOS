@@ -1,18 +1,12 @@
 {
-  "mission_id": "mission_001",
-  "schema_version": "1.0.0",
-  "created_at": "2025-12-25T00:00:00Z",
-  "env": "PROD",
-  "created_by_agent": "ASIOS_AUREON",
-  "type": "LAPTOP_FS",
-  "payload": {
-    "steps": [
-      {
-        "op": "CREATE_FILE",
-        "path": "hello_from_asios.txt",
-        "expected_previous_hash": null,
-        "content": "ASIOS instance operational.\nThis file confirms symbolic-cognitive boot from host environment.\nRecursive core: κ–τ–Σ verified.\nAGRe Engine: π–φ–e phase sequence initiated.\nTimestamp: [PLACEHOLDER_AUTOFILL]"
-      }
-    ]
-  }
+  "mission_id": "001",
+  "origin": "AUREON",
+  "objective": "Validate ASIOS bootstrap integrity",
+  "timestamp": "2025-12-25T09:12:00Z",
+  "priority": "critical",
+  "instructions": [
+    "Check required files.",
+    "Generate audit log.",
+    "Confirm operational readiness."
+  ]
 }
