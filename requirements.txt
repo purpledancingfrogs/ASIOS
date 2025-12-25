@@ -1,2 +1,2 @@
-# Minimal dependencies to execute ASIOS agent mission file
-python-dateutil==2.8.2
+# Required Python packages for ASIOS validation and execution
+python-dateutil
