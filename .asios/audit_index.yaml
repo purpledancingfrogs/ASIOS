@@ -1,0 +1,12 @@
+runtime:
+  backend: backend/main.py
+  entrypoint: run_asios_agent.py
+  port: 5055
+
+endpoints:
+  - path: /api/health
+    method: GET
+  - path: /api/tasks/run
+    method: POST
+
+agent_identity: ASIOS-Prototype-001
