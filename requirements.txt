@@ -1,1 +1,2 @@
-# No external dependencies required
+# Minimal dependencies to execute ASIOS agent mission file
+python-dateutil==2.8.2
