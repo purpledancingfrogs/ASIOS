@@ -1,8 +1,12 @@
 ﻿schema_version: 1
-generated_at_utc: 2025-12-30T11:15:39Z
+generated_at_utc: 2025-12-30T11:17:33Z
 artifacts:
+  - path: .gitattributes
+    sha256: 44beb620fe3ae27962dc13fb666c4054ba98f52639a5d5cb125a8a93ce561eae
   - path: laptop_executor.ps1
     sha256: db31b23a639e8af1d3a73a8f8cf2ef1b02544a24815dc8d1a2eed3c0acbebb3c
+  - path: validate_mission.py
+    sha256: 98dd64d1bdf6c36e58a06352c48046a0b7016be8b513e38c8ad107949a831b9f
   - path: run_asios_agent.py
     sha256: e45f8447b03e673928678d539c5e6b57e1bd0779a684bd07f9653bf3f9b968c1
   - path: README_EXEC.md
@@ -15,6 +19,8 @@ artifacts:
     sha256: adb37ec0b5010abcf18e7c8ec8097a1a230b8c845782d5c1fca77cc2bb376ff5
   - path: mission_hello.json
     sha256: 3a35b95c6b3ef43bc2d3aadfe1acb88919bd94a78e3b31a22abff9d168a8330b
+  - path: hello_from_asios.txt
+    sha256: f40c60bbd7e8c39e22dc6c295a27d8ed25f89e126f45c7ad76d921f81c875e78
   - path: asios_tests/determinism_test.txt
     sha256: 158ff46d3d0dd8502998a1bfd0f43e7dacbcd7b43cf14dee7733692fb3d34401
   - path: asios_tests/determinism/determinism_test.txt
