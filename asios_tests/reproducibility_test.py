@@ -1,4 +1,4 @@
-﻿import hashlib, pathlib, subprocess, sys
+import hashlib, pathlib, subprocess, sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 EVID = ROOT / 'evidence'

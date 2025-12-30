@@ -1,4 +1,4 @@
-﻿{
+{
     "executor":  "ASIOS",
     "mission_sha256":  "E7DA5902CF547D7E72504921FF74C2A297DDCDA1AAD011F434BC77C500E8BC87",
     "mission":  "examples\\mission_from_ci.json"

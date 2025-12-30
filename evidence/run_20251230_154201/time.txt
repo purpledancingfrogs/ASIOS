@@ -1,2 +1,2 @@
-﻿start_utc=12/30/2025 16:15:16.ToUniversalTime().ToString('o')
+start_utc=12/30/2025 16:15:16.ToUniversalTime().ToString('o')
 end_utc=12/30/2025 16:15:16.ToUniversalTime().ToString('o')

@@ -1,4 +1,4 @@
-﻿C:\AUREON\repo\evidence\01_system_fingerprint.json|33162|2025-12-30T20:02:25.8170644Z
+C:\AUREON\repo\evidence\01_system_fingerprint.json|33162|2025-12-30T20:02:25.8170644Z
 C:\AUREON\repo\evidence\02_process_top50.json|12212|2025-12-30T20:02:25.9186018Z
 C:\AUREON\repo\evidence\03_services.json|54772|2025-12-30T20:02:26.0260534Z
 C:\AUREON\repo\evidence\05_volumes.json|21424|2025-12-30T20:02:27.7322226Z
