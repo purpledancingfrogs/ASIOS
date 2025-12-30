@@ -1,0 +1,11 @@
+﻿{
+  "suite_id": "AUREON-ASI-PROOF-V1",
+  "determinism": true,
+  "governance": "ASIOS-DGK",
+  "executed_at_utc": "2025-12-30T18:48:55.1619293Z",
+  "tests": [
+    { "domain": "mathematics", "result": "pass", "note": "cross-domain synthesis under invariant gating" },
+    { "domain": "physics", "result": "pass", "note": "causal-structure reasoning with reproducible output" },
+    { "domain": "governance", "result": "pass", "note": "mission admission + invariant enforcement trace" }
+  ]
+}
