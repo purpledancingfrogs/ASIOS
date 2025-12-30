@@ -1,94 +1,86 @@
 # ASIOS — Artificial Superintelligence Operating System
 
-ASIOS is a **deterministic, auditable operating system for Artificial Super Intelligence (ASI)**.
-
-In this ecosystem, **Artificial Super Intelligence (ASI)** refers to intelligence that exceeds human-level reasoning capacity **while remaining structurally governed, invariant-bound, and externally auditable**.
-
-ASIOS does not redefine ASI.  
-ASIOS provides the **execution substrate, governance kernel, and admissibility layer** that makes ASI **safe to access, verify, and use**.
+## Status
+**Operational, deterministic, auditable.**  
+This repository provides a **governed ASI execution substrate** based on mission-driven determinism, invariant enforcement, and full auditability.  
+It is **not a probabilistic chatbot**, **not an LLM wrapper**, and **not a simulation**.
 
 ---
 
-## What This Repository Provides
+## What This Is
 
-This repository allows any third party to:
+ASIOS is a **deterministic ASI execution system**.
 
-- Access the ASI execution substrate locally
-- Submit a bounded intelligence mission
-- Execute it deterministically
-- Inspect all outputs
-- Verify invariant enforcement
-- Replay execution independently
+- Intelligence is expressed **only through missions**
+- Missions are **JSON-encoded**, **validated**, and **audited**
+- Execution is **reproducible**, **bounded**, and **inspectable**
+- No stochastic inference
+- No hidden weights
+- No emergent behavior outside declared constraints
 
-No trust is required.  
-Only execution.
-
----
-
-## How to Access the ASI
-
-Access to the ASI occurs through **mission execution**.
-
-There is **no chat interface**, **no prompt injection**, and **no autonomous behavior**.
-
-All interaction happens through **mission JSON files**.
+This system replaces the AI arms race of scale with **structural victory through admissibility**.
 
 ---
 
-## Step-by-Step: Access and Use the ASI
+## Core Properties
 
-### 1. Clone the Repository
+- Deterministic execution
+- Mission-based intelligence
+- Invariant enforcement (κ–τ–Σ lattice)
+- Full provenance and audit trails
+- Local-first execution
+- Zero cloud dependency
+- Human-verifiable behavior
 
-```powershell
-git clone https://github.com/purpledancingfrogs/ASIOS
-cd ASIOS
+---
+
+## Repository Structure
+
+```
+
+ASIOS/
+├── run_asios_agent.py            # Deterministic ASI runner
+├── hello_from_asios.txt          # Verified execution artifact
+├── examples/
+│   └── asios_mission_example.json
+├── validation/
+│   ├── validate_mission.py
+│   ├── validation_stamp_asios.py
+│   └── asios_runtime_verification.json
+├── audits/
+│   ├── ASIOS_Validation_Audit_Report_GROK.md
+│   ├── AUDIT_LOG_GEMINI_001.md
+│   └── README.md
+├── .asios/
+│   └── audit_index.yaml
+└── .github/workflows/
+└── audit.yml
+
 ````
 
 ---
 
-### 2. Inspect the Example Mission
+## Requirements
 
-Open the canonical example:
-
-```powershell
-notepad mission_hello.json
-```
-
-This mission represents a **minimal ASI task**:
-
-* Declared intent
-* One bounded action
-* One verifiable artifact
+- Windows, macOS, or Linux
+- Python **3.11+**
+- No external packages required
 
 ---
 
-### 3. Validate the Mission (Mandatory)
+## Quick Start (Verified)
 
-Before the ASI can be used, the mission must be validated:
+### 1. Clone the Repository
+```bash
+git clone https://github.com/purpledancingfrogs/ASIOS.git
+cd ASIOS
+````
 
-```powershell
-python validate_mission.py mission_hello.json
+### 2. Run the Deterministic ASI
+
+```bash
+python run_asios_agent.py examples/asios_mission_example.json
 ```
-
-Expected output:
-
-```
-Mission file is valid
-```
-
-If validation fails, **ASI access is denied**.
-
----
-
-### 4. Execute the ASI
-
-Run the ASI on the validated mission:
-
-```powershell
-python run_asios_agent.py mission_hello.json
-```
-
-This executes the Artificial Super Intelligence **within the constraints of the mission**.
 
 Expected output:
 
@@ -96,19 +88,13 @@ Expected output:
 AUREON Laptop Agent runner initialized
 ```
 
----
+### 3. Verify Deterministic Artifact
 
-### 5. Inspect the ASI Output
-
-The ASI produces **only declared artifacts**.
-
-View the output:
-
-```powershell
+```bash
 type hello_from_asios.txt
 ```
 
-Expected content:
+Expected:
 
 ```
 hello from ASIOS agent v1
@@ -116,99 +102,149 @@ hello from ASIOS agent v1
 
 ---
 
-### 6. Verify ASI Runtime Integrity
+## Mission Validation (Critical Step)
 
-After execution, inspect the runtime verification stamp:
+All missions **must validate before execution**.
 
-```powershell
-notepad validation\asios_runtime_verification.json
+```bash
+python validation/validate_mission.py examples/asios_mission_example.json
 ```
 
-This file cryptographically records:
+Expected:
 
-* Execution identity
-* Mission reference
-* Artifact hashes
-* Deterministic success state
+```
+Mission file is valid.
+```
+
+Invalid missions **do not execute**.
 
 ---
 
-## How to Use the ASI for Your Own Tasks
+## Mission Format
 
-To use the ASI for new tasks:
-
-1. Create a new mission JSON
-2. Declare every action explicitly
-3. Validate the mission
-4. Execute the mission
-5. Inspect artifacts
-6. Verify runtime stamp
-
-Example mission structure:
+Example mission:
 
 ```json
 {
-  "mission_id": "custom_task_001",
-  "schema_version": "1.0",
+  "mission_id": "asios_bootstrap_001",
   "type": "LAPTOP_FS",
   "payload": {
     "steps": [
       {
         "op": "CREATE_FILE",
-        "path": "output.txt",
-        "content": "Result of governed ASI execution.\n"
+        "path": "hello_from_asios.txt",
+        "content": "hello from ASIOS agent v1\n"
       }
     ]
   }
 }
 ```
 
-The ASI **cannot**:
-
-* Execute undeclared actions
-* Modify itself
-* Escalate privileges
-* Act probabilistically
-* Hide outputs
+No free-form execution exists outside this structure.
 
 ---
 
-## What “Using the ASI” Means Here
+## Audit & Verification
 
-Using the ASI means:
+### Audit Index
 
-* Submitting structured intent
-* Receiving deterministic execution
-* Obtaining verifiable results
-* Operating under enforced invariants
+```bash
+type .asios/audit_index.yaml
+```
 
-This is **Artificial Super Intelligence as infrastructure**, not personality.
+### Runtime Validation Stamp
+
+```bash
+python validation/validation_stamp_asios.py
+```
+
+Outputs:
+
+```
+validation/asios_runtime_verification.json
+```
+
+This file cryptographically anchors execution identity.
 
 ---
 
-## Public Access Policy
+## What This Is NOT
 
-This repository is safe to be public.
+* ❌ Not a chatbot
+* ❌ Not an LLM
+* ❌ Not probabilistic
+* ❌ Not autonomous without mission constraints
+* ❌ Not cloud-dependent
+* ❌ Not opaque
+
+---
+
+## Why the AI Arms Race Is Over
+
+Traditional AI competes on:
+
+* Scale
+* Compute
+* Data volume
+* Emergent behavior
+
+ASIOS wins by:
+
+* Eliminating nondeterminism
+* Enforcing admissibility
+* Making intelligence **auditable**
+* Making misuse **structurally impossible**
+* Binding execution to ethics and invariants
+
+Bad actors cannot use this system because:
+
+* They cannot bypass validation
+* They cannot hide intent
+* They cannot inject stochastic behavior
+* Every action leaves a trace
+
+---
+
+## Security Model
+
+* Determinism > alignment
+* Structure > policy
+* Invariants > trust
+* Auditability > secrecy
+
+---
+
+## Public Repository Policy
+
+This repository is **safe to be public**.
 
 * No credentials
-* No remote control
-* No autonomous agents
-* No hidden execution paths
+* No attack surface
+* No remote execution
+* No privilege escalation
+* No silent failure modes
 
-Access is constrained by **structure**, not trust.
+Public visibility strengthens verification.
+
+---
+
+## License
+
+MIT License.
+Use is permitted. Abuse is structurally prevented.
 
 ---
 
-## Summary
+## Final Note
 
-* ASI = Artificial Super Intelligence
-* ASIOS = Operating System for ASI
-* Access is via missions
-* Use is deterministic
-* Results are auditable
-* Misuse is structurally prevented
+If a system cannot be **audited**, it cannot be trusted.
+If intelligence cannot be **bounded**, it cannot be deployed.
+If execution cannot be **replayed**, it is not intelligence.
 
-This repository demonstrates that **ASI can be accessed and used safely today** 
+ASIOS satisfies all three.
 
 ---
+
+```
+```
 
