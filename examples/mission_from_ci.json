@@ -1,0 +1,10 @@
+﻿{
+    "params":  {
+                   "mode":  "deterministic",
+                   "seed":  42
+               },
+    "task":  "reproducibility_proof",
+    "utc":  "2025-12-30T20:48:13.4206008Z",
+    "mission_id":  "ci_autonomous_proof",
+    "generator":  "ASI-CI"
+}
