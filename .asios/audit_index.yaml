@@ -1,12 +1,13 @@
-runtime:
-  backend: backend/main.py
-  entrypoint: run_asios_agent.py
-  port: 5055
-
-endpoints:
-  - path: /api/health
-    method: GET
-  - path: /api/tasks/run
-    method: POST
-
-agent_identity: ASIOS-Prototype-001
+﻿schema_version: 1
+generated_at_utc: 2025-12-30T11:09:45Z
+artifacts:
+  - path: laptop_executor.ps1
+    sha256: DB31B23A639E8AF1D3A73A8F8CF2EF1B02544A24815DC8D1A2EED3C0ACBEBB3C
+  - path: run_asios_agent.py
+    sha256: E45F8447B03E673928678D539C5E6B57E1BD0779A684BD07F9653BF3F9B968C1
+  - path: mission_001.json
+    sha256: 6BB4CA2EFBE627B583B03FA1796A976A8F47006138AD4C453408A14BC1E3BDAC
+  - path: README_EXEC.md
+    sha256: 4653D1DBCC26FB3AB91654C99C1B8A76C9DB595E4D027A6F58DEA0FCDF53623E
+  - path: requirements.txt
+    sha256: 1C2B8A0A046AA65AA32F27EA919F89F49265D2F9AD6B97A5572E2CCC8BC81A8C
