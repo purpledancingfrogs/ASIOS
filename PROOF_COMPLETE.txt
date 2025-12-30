@@ -1,0 +1,11 @@
+﻿ASIOS + ASI-CI PROOF STATUS
+
+- Repository: https://github.com/purpledancingfrogs/ASIOS
+- Claim: Autonomous, deterministic ASIOS execution with ASI-CI mission generation
+- Evidence:
+  * evidence/MANIFEST.txt
+  * evidence/HASHES.sha256
+  * evidence/VERIFY_HASHES.sha256
+  * Tagged release: proof-asi-20251230
+
+This file finalizes the proof record.
