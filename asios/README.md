@@ -248,3 +248,8 @@ ASIOS satisfies all three.
 ```
 ```
 
+
+## Requirements
+- **Python 3.11 (pinned)**
+- Git
+- PowerShell

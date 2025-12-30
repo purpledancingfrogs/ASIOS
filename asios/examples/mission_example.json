@@ -1,0 +1,11 @@
+﻿{
+  "mission_id": "example-001",
+  "type": "DEMO",
+  "constraints": {
+    "safety": true,
+    "human_override": true
+  },
+  "objective": {
+    "action": "NO_OP"
+  }
+}
