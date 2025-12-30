@@ -1,16 +1,16 @@
 schema_version: 1
-generated_at_utc: 2025-12-30T12:45:55Z
+generated_at_utc: 2025-12-30T12:50:33Z
 artifacts:
   - path: "laptop_executor.ps1"
     sha256: "05919afcc80a12ee44e45d70190af9f7d6a20aef82e95216f10f39611f103c11"
   - path: "validate_mission.py"
-    sha256: "1e618ffaa8accb2ef2513b028a3b85a3a9a5308be5f7d230c03f44b1ebf104c8"
+    sha256: "82f58ac69bb6c513db970b522e0c9ddf4deea3425b57f8e3e2a0c8dd63f972ca"
   - path: "run_asios_agent.py"
-    sha256: "e45f8447b03e673928678d539c5e6b57e1bd0779a684bd07f9653bf3f9b968c1"
+    sha256: "12c54a2c8722b44f38403b43097d0c37599aa4a927b8d51e842044632237b384"
   - path: "requirements.txt"
-    sha256: "1c2b8a0a046aa65aa32f27ea919f89f49265d2f9ad6b97a5572e2ccc8bc81a8c"
+    sha256: "864b551b0567d444cf473e2600d23e0bc8b12a2c8780cea9e84124c86f616bbf"
   - path: "README_EXEC.md"
-    sha256: "4653d1dbcc26fb3ab91654c99c1b8a76c9db595e4d027a6f58dea0fcdf53623e"
+    sha256: "05dc5f339617c2d03ca9472e8adeb47df33e392690fa1a3e1ba049e83344ebfb"
   - path: "mission_001.json"
     sha256: "35a78044288ec48a6dca99f3a91a93cc0bc9689bda732aeeb1b3d78d87d7ca36"
   - path: "hello_from_asios.txt"
