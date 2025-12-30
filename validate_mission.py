@@ -1,4 +1,4 @@
-﻿import json, sys, re
+import json, sys, re
 from datetime import datetime
 
 ALLOWED_TYPES = {"LAPTOP_FS"}

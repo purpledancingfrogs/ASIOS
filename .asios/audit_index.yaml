@@ -1,28 +1,19 @@
-﻿schema_version: 1
-generated_at_utc: 2025-12-30T11:59:00Z
+schema_version: 1
+generated_at_utc: 2025-12-30T12:06:56Z
 artifacts:
-  - path: .gitattributes
-    sha256: 44beb620fe3ae27962dc13fb666c4054ba98f52639a5d5cb125a8a93ce561eae
-  - path: laptop_executor.ps1
-    sha256: 233f8fc9c6023a1ece52858f5ccbbde21c882428112726f8c9174d7ab7b052aa
-  - path: validate_mission.py
-    sha256: 343153e964b599ec03fc685180161239860d7d79c74c0c622a4c9827e4a69cd9
-  - path: run_asios_agent.py
-    sha256: e45f8447b03e673928678d539c5e6b57e1bd0779a684bd07f9653bf3f9b968c1
-  - path: requirements.txt
-    sha256: 1c2b8a0a046aa65aa32f27ea919f89f49265d2f9ad6b97a5572e2ccc8bc81a8c
-  - path: README_EXEC.md
-    sha256: 4653d1dbcc26fb3ab91654c99c1b8a76c9db595e4d027a6f58dea0fcdf53623e
-  - path: mission_001.json
-    sha256: ef25c48ca5cc42d88669a2dc605143a8507979f930717a96a1e57b47172494dd
-  - path: hello_from_asios.txt
-    sha256: f40c60bbd7e8c39e22dc6c295a27d8ed25f89e126f45c7ad76d921f81c875e78
-  - path: scripts/verify_audit_index.py
-    sha256: 9402e54e29fbbebb17129bc7e2fc491f41fa6a988730df196f06d9e742b0397b
-  - path: .github/workflows/audit.yml
-    sha256: 67e989e3cd4c097071af51c6649d0ad9d703605e3b3d5b32244c5bc7d87e169e
-  - path: asios_tests/determinism/determinism_test.txt
-    sha256: f7ba5068acae3aadc927cbd7ce5191a1bb2d3927ba30792c0662edac8c466fb6
-  - path: asios_tests/determinism_test.txt
-    sha256: 158ff46d3d0dd8502998a1bfd0f43e7dacbcd7b43cf14dee7733692fb3d34401
-
+  - path: "laptop_executor.ps1"
+    sha256: "8881cdacb0c4166fe4b91604f40c11a36f4a09d95ab62481d8bdd188afdf01c8"
+  - path: "validate_mission.py"
+    sha256: "3330c43b6540c5c51e35c0ad8535b6d0addebc93d29b845307fa8c359449c457"
+  - path: "run_asios_agent.py"
+    sha256: "e45f8447b03e673928678d539c5e6b57e1bd0779a684bd07f9653bf3f9b968c1"
+  - path: "requirements.txt"
+    sha256: "1c2b8a0a046aa65aa32f27ea919f89f49265d2f9ad6b97a5572e2ccc8bc81a8c"
+  - path: "README_EXEC.md"
+    sha256: "4653d1dbcc26fb3ab91654c99c1b8a76c9db595e4d027a6f58dea0fcdf53623e"
+  - path: "mission_001.json"
+    sha256: "ef25c48ca5cc42d88669a2dc605143a8507979f930717a96a1e57b47172494dd"
+  - path: "hello_from_asios.txt"
+    sha256: "8e4e8bbba1c94f2a44cf6c49d8764cad78369c389a95543f86f8b65cf36ce173"
+  - path: "asios_tests/determinism/determinism_test.txt"
+    sha256: "45df99afdb30dc04d8c57dc9fa1857f1cb1bcd89852d0200c356e8b168a093c1"
