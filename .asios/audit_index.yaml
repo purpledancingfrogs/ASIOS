@@ -1,13 +1,22 @@
 ﻿schema_version: 1
-generated_at_utc: 2025-12-30T11:09:45Z
+generated_at_utc: 2025-12-30T11:13:57Z
 artifacts:
   - path: laptop_executor.ps1
-    sha256: DB31B23A639E8AF1D3A73A8F8CF2EF1B02544A24815DC8D1A2EED3C0ACBEBB3C
+    sha256: db31b23a639e8af1d3a73a8f8cf2ef1b02544a24815dc8d1a2eed3c0acbebb3c
   - path: run_asios_agent.py
-    sha256: E45F8447B03E673928678D539C5E6B57E1BD0779A684BD07F9653BF3F9B968C1
-  - path: mission_001.json
-    sha256: 6BB4CA2EFBE627B583B03FA1796A976A8F47006138AD4C453408A14BC1E3BDAC
+    sha256: e45f8447b03e673928678d539c5e6b57e1bd0779a684bd07f9653bf3f9b968c1
   - path: README_EXEC.md
-    sha256: 4653D1DBCC26FB3AB91654C99C1B8A76C9DB595E4D027A6F58DEA0FCDF53623E
+    sha256: 4653d1dbcc26fb3ab91654c99c1b8a76c9db595e4d027a6f58dea0fcdf53623e
   - path: requirements.txt
-    sha256: 1C2B8A0A046AA65AA32F27EA919F89F49265D2F9AD6B97A5572E2CCC8BC81A8C
+    sha256: 1c2b8a0a046aa65aa32f27ea919f89f49265d2f9ad6b97a5572e2ccc8bc81a8c
+  - path: mission_001.json
+    sha256: 6bb4ca2efbe627b583b03fa1796a976a8f47006138ad4c453408a14bc1e3bdac
+  - path: mission_sample_deterministic.json
+    sha256: adb37ec0b5010abcf18e7c8ec8097a1a230b8c845782d5c1fca77cc2bb376ff5
+  - path: mission_hello.json
+    sha256: 3a35b95c6b3ef43bc2d3aadfe1acb88919bd94a78e3b31a22abff9d168a8330b
+  - path: asios_tests/determinism_test.txt
+    sha256: 158ff46d3d0dd8502998a1bfd0f43e7dacbcd7b43cf14dee7733692fb3d34401
+  - path: asios_tests/determinism/determinism_test.txt
+    sha256: f7ba5068acae3aadc927cbd7ce5191a1bb2d3927ba30792c0662edac8c466fb6
+
