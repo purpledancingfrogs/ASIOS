@@ -44,11 +44,11 @@ if __name__ == "__main__":
         sys.exit(1)
     p = sys.argv[1]
     try:
-        with open(p, "r", encoding="utf-8") as f:
+        with open(p, "r", encoding="utf-8-sig") as f:
             m = json.load(f)
         validate(m)
-        print("Mission file is valid ✅")
+        print("Mission file is valid âœ…")
         sys.exit(0)
     except Exception as e:
-        print(f"Mission invalid ❌: {e}")
+        print(f"Mission invalid âŒ: {e}")
         sys.exit(1)
