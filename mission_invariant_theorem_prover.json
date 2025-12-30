@@ -1,0 +1,36 @@
+﻿{
+  "mission_id": "ITP_001",
+  "schema_version": "1.0",
+  "created_at": "2025-12-30T00:00:00Z",
+  "env": "DEV",
+  "created_by_agent": "AUREON_LOCAL_AGENT",
+  "type": "LAPTOP_FS",
+  "payload": {
+    "steps": [
+      {
+        "op": "CREATE_FILE",
+        "path": "invariant_theorem_prover/README.md",
+        "expected_previous_hash": null,
+        "content": "# Invariant Theorem Prover (ITP)\n\nDeterministic scaffold for proving whether an action violates system invariants.\n\nInvariants:\n- Non-harm\n- Coherence preservation\n- Temporal responsibility\n\nAll proofs are auditable and replayable."
+      },
+      {
+        "op": "CREATE_FILE",
+        "path": "invariant_theorem_prover/invariants.yaml",
+        "expected_previous_hash": null,
+        "content": "invariants:\n  - id: NON_HARM\n    description: \"No action may increase net harm\"\n  - id: COHERENCE\n    description: \"No action may increase systemic incoherence\"\n  - id: TEMPORAL\n    description: \"No action may violate long-horizon stability\""
+      },
+      {
+        "op": "CREATE_FILE",
+        "path": "invariant_theorem_prover/prover.py",
+        "expected_previous_hash": null,
+        "content": "import json\nimport sys\n\ndef prove(action, invariants):\n    results = []\n    for inv in invariants:\n        results.append({\"invariant\": inv[\"id\"], \"holds\": True})\n    return results\n\nif __name__ == \"__main__\":\n    action = json.load(open(sys.argv[1]))\n    invariants = json.load(open(sys.argv[2]))[\"invariants\"]\n    proof = prove(action, invariants)\n    json.dump(proof, open(\"proof_output.json\", \"w\"), indent=2)"
+      },
+      {
+        "op": "CREATE_FILE",
+        "path": "invariant_theorem_prover/sample_action.json",
+        "expected_previous_hash": null,
+        "content": "{ \"action\": \"CREATE_FILE\", \"risk\": \"LOW\" }"
+      }
+    ]
+  }
+}

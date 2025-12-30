@@ -1,0 +1,7 @@
+invariants:
+  - id: NON_HARM
+    description: "No action may increase net harm"
+  - id: COHERENCE
+    description: "No action may increase systemic incoherence"
+  - id: TEMPORAL
+    description: "No action may violate long-horizon stability"
