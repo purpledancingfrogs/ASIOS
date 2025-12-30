@@ -1,23 +1,29 @@
-{
+﻿{
   "mission_id": "001",
   "schema_version": "1.0",
-  "created_at": "2025-12-30T11:05:31Z",
+  "created_at": "2025-12-30T00:00:00Z",
   "env": "DEV",
   "created_by_agent": "AUREON_LOCAL_AGENT",
   "type": "LAPTOP_FS",
   "payload": {
     "steps": [
       {
-        "op": "CREATE_FILE",
-        "path": "asios_tests/determinism_test.txt",
+        "op": "REPLACE_FILE",
+        "path": "hello_from_asios.txt",
         "expected_previous_hash": null,
-        "content": "This is a deterministic file creation test executed by ASIOS."
+        "content": "hello from ASIOS agent v1\n"
       },
       {
-        "op": "RUN_SCRIPT",
-        "path": "asios_tests/verify_determinism.py",
-        "expected_previous_hash": "a1b2c3d4e5f6g7h8i9",
-        "content": null
+        "op": "REPLACE_FILE",
+        "path": "asios_tests/determinism/determinism_test.txt",
+        "expected_previous_hash": null,
+        "content": "initialized\n"
+      },
+      {
+        "op": "REPLACE_FILE",
+        "path": "asios_tests/determinism_test.txt",
+        "expected_previous_hash": null,
+        "content": "initialized\n"
       }
     ]
   }
